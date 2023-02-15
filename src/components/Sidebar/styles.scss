@@ -1,0 +1,33 @@
+@import '../../styles/config';
+
+.contact-sidebar{
+    height: $vcontact;
+    position: relative;
+    left: 10%;
+    margin-bottom: 90px ;
+}
+.contact-sidebar svg{
+    width: 20px;
+    height: 30px;
+    margin: 1rem 0 ;
+    cursor: pointer;
+}
+
+@mixin vertical-line-style{
+    content: "";
+    position: absolute;
+    height: 130%;
+    padding: 1px;
+    left: 8px;
+}
+.contact-sidebar::before{
+    @include vertical-line-style;
+    top: -150%;
+    background-image: $gradientTobottom;
+}
+
+.contact-sidebar::after{
+    @include vertical-line-style;
+    top: 120%;
+    background-image: $gradientTotop;
+}

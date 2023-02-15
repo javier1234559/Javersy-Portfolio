@@ -1,0 +1,13 @@
+@import '../../styles/config';
+
+
+.bg-gradient{
+    background-image:$gradientBackground;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+.skills a{
+    margin: 0 5px;
+}

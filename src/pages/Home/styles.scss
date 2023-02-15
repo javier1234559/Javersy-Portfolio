@@ -1,0 +1,7 @@
+@import '../../styles/config';
+
+.gradient-text{
+    background-image:$gradientText;
+    background-clip: text;
+    color:transparent
+}
