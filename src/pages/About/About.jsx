@@ -3,8 +3,8 @@ import "./styles.scss";
 
 const About = () => {
   return (
-    <div className="flex items-center lg:flex-row flex-col">
-      <div className="bg-gradient max-w-[600px] p-[2px] rounded-lg ">
+    <div className="flex items-center lg:mt-0 mt-20 lg:flex-row flex-col">
+      <div className="bg-gradient max-w-[600px] p-[2px] rounded-lg animate__fadeInUp">
         <div className="bg-slate p-10 rounded-lg ">
           <h1 className="text-[25px] ">Hi, my name is Nhat</h1>
           <p className="text-paragragh leading-[28px]">
@@ -15,7 +15,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="lg:ml-8 lg:block flex-col flex justify-center items-center max-w-[600px]">
+      <div className="lg:ml-8 lg:block flex-col flex justify-center items-center max-w-[600px] animate__lightSpeedInRight">
         <p className="text-paragragh max-w-[600px] py-8 text-[20px] font-semibold ">
           Programming Languages and Tools that I had known
         </p>

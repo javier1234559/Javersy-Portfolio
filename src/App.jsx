@@ -1,6 +1,7 @@
 import { Routes ,Route } from "react-router-dom";
 import { Navbar, SideBar } from "./components";
-import { Home, About, Project } from "./pages";
+import { Home, About, Project , Contact} from "./pages";
+import 'animate.css';
 
 function App() {
   return (
@@ -10,11 +11,12 @@ function App() {
         <div className="flex-1">
           <SideBar />
         </div>
-        <div className="flex-10 h-[100%] flex  items-center ">
+        <div className="flex-10 h-[100%] flex  items-center wrapper">
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

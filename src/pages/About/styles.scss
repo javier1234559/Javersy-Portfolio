@@ -1,6 +1,12 @@
 @import '../../styles/config';
 
+.animate__fadeInUp{
+    animation: fadeInUp 1s 0s;
 
+}
+.animate__lightSpeedInRight{
+    animation:  lightSpeedInRight 1s 0s ;
+}
 .bg-gradient{
     background-image:$gradientBackground;
 }

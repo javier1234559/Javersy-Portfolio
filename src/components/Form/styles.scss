@@ -1,0 +1,35 @@
+@import "../../styles/config";
+
+form {
+    background-color: $slate;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: $slate 10px 10px 30px;
+
+    button {
+        color: #000;
+        background-color: #00ffd9 !important;
+        height: 30px;
+        width: 100px;
+        border-radius: 3px;
+        // box-shadow: $marine 0px 0px 4px;
+    }
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    input::placeholder {
+        color: white;
+        font-size: 20px;
+    }
+}
