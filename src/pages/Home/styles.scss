@@ -10,12 +10,12 @@
 .typing{
     @include typed((
         "Nhat": (
-            background-image:linear-gradient(to right,  rgba(255, 171, 155, 0.4), rgba(255, 171, 155, 0.7),rgba(0, 255, 255, 0.7)),
+            background-image:linear-gradient(to right,  rgb(254, 170, 155), #ffffffbe,rgba(0, 255, 255, 0.7)),
             background-clip: text,
             color:transparent
         ),
         "Javier" : (
-            background-image:linear-gradient(to right,  rgba(255, 171, 155, 0.4), rgba(255, 171, 155, 0.7),rgba(0, 255, 255, 0.7)),
+            background-image:linear-gradient(to right,  rgb(254, 170, 155), #ffffffbe,rgba(0, 255, 255, 0.7)),
             background-clip: text,
             color:transparent
         )

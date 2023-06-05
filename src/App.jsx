@@ -13,6 +13,7 @@ function App() {
         </div>
         <div className="flex-10 h-[100%] flex  items-center wrapper">
           <Routes>
+            <Route path="/Javersy-Portfolio/" element={<Home/>} />
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Project />} />

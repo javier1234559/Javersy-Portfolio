@@ -11,11 +11,11 @@
     box-sizing: border-box;
 }
 .themes{
-    background-color:hsla(207,10%,18%,1);
+    background-color:#292e32;
     background-image:
-    radial-gradient(at 53% 40%, hsla(207,10%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 53% 40%, #292e32 0px, transparent 50%),
     radial-gradient(at 100% 39%, hsla(171,100%,50%,0.38) 0px, transparent 50%),
-    radial-gradient(at 93% 99%, hsla(10,100%,80%,0.38) 0px, transparent 50%);
+    radial-gradient(at 93% 99%, #ffaa9961 0px, transparent 50%);
     position: relative;  
     background-attachment: fixed;  
     color: $white;
