@@ -1,0 +1,54 @@
+//----------------------------- THEME ----------------------------
+//theme dark
+$primary: #051320;
+$secondary1: #fff;
+$secondary2: #eceeee;
+$secondary3: #000812;
+$accent: #76dcc2;
+$gradient1: #76dcc2;
+$gradient2: #c0e6de;
+$hover: rgba(195, 235, 238, 0.2);
+//theme light
+// $primary: #eceeee;
+// $secondary1: #ffffff;
+// $secondary2: #051320;
+// $secondary3: #000812;
+// $accent: #76dcc2;
+// $gradient1: #76dcc2;
+// $gradient2: #c0e6de;
+// $hover: rgba(167, 186, 190, 0.342);
+
+// background:
+$text-gradient: radial-gradient(circle, rgba(26, 176, 197, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+//----------------------------- DIMENSIONS ----------------------------
+$wapperlength: 90%;
+
+$max-width-title-section: 80rem;
+
+$font-family: 'Open Sans', sans-serif;
+$heading1: 4.8rem;
+$heading2: 2.4rem;
+$heading3: 1.6rem;
+$paragraph: 1.4rem;
+$title-text: 6.4rem;
+$functional-text: 1.2rem;
+
+$padding-small: 1rem;
+$padding-medium: 2rem;
+$padding-large: 3rem;
+
+$margin-small: 3rem;
+$margin-medium: 8.5rem;
+$margin-large: 20rem;
+
+$line-height-title: 8.5rem;
+$line-height-small: 2.5rem;
+$line-height-medium: 3.3rem;
+$line-height-large: 4.9rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;

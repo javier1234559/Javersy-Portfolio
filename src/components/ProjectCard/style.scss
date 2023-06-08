@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+.project-card {
+    color: $secondary2;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    > .project-card-button {
+        align-self: start;
+        background-color: $secondary2;
+        font-weight: $font-weight-bold;
+        color: $primary;
+    }
+}

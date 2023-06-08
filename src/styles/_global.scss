@@ -1,0 +1,148 @@
+@import './variables';
+@import './reponsive';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 62.5% of 16px base font size is 10px */
+    font-size: 62.5%;
+}
+
+/* Preserve 16px body font-size, set body font-size to 1.6rem */
+body {
+    /* 16px */
+    font-size: 1.6rem;
+    font-family: $font-family;
+    position: relative;
+    background-color: $primary;
+    width: 100%;
+
+    min-height: 100vh;
+    bottom: 0;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: $wapperlength;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.themes {
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+}
+.blobgradientblur1 {
+    z-index: -1;
+    position: absolute;
+    width: 541.36px;
+    height: 372.15px;
+    right: 0px;
+    background: $gradient1;
+    filter: blur(175px);
+}
+.blobgradientblur2 {
+    z-index: -1;
+    position: absolute;
+    width: 473.6px;
+    top: 400px;
+    height: 204.23px;
+    right: 136.4px;
+
+    background: $gradient2;
+    filter: blur(175px);
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.text {
+    color: $secondary2;
+    line-height : $line-height-small;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.text-title {
+    font-weight: $font-weight-bold;
+    font-size: $title-text;
+    line-height: $line-height-title;
+    color: $secondary2;
+}
+
+.text-heading1 {
+    font-size: $heading1;
+    line-height: $line-height-large;
+}
+
+.text-heading2 {
+    font-size: $heading2;
+    line-height: $line-height-medium;
+    color: $secondary2;
+}
+.text-heading3 {
+    font-size: $heading3;
+    line-height: $line-height-medium;
+    color: $secondary2;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.subtile-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    border-radius: 5px;
+    padding: $padding-small;
+}
+.section {
+    margin: $margin-medium 0 ;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.text-color-primary{
+    color:$primary;
+}
+.text-color-secondary{
+    color:$secondary2;
+}
+.text-white{
+    color:#ECEEEE;
+}

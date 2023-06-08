@@ -1,0 +1,85 @@
+@import '../../styles/variables';
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    color: $secondary2;
+
+    .navbar__logo {
+        justify-self: start;
+    }
+
+    .navbar__menu {
+        justify-self: center;
+        position: relative;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .animation {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            background: $hover;
+            transition: all 0.5s ease 0s;
+        }
+
+        li {
+            width: 100px;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                text-align: center;
+            }
+        }
+
+        li:nth-child(1) {
+            width: 100px;
+        }
+
+        .start-home,
+        li:nth-child(1):hover ~ .animation {
+            width: 100px;
+            left: 0;
+        }
+
+        li:nth-child(2) {
+            width: 100px;
+        }
+
+        li:nth-child(2):hover ~ .animation {
+            width: 100px;
+            left: 100px;
+        }
+
+        li:nth-child(3) {
+            width: 100px;
+        }
+
+        li:nth-child(3):hover ~ .animation {
+            width: 100px;
+            left: 200px;
+        }
+
+        li:nth-child(4) {
+            width: 110px;
+        }
+
+        li:nth-child(4):hover ~ .animation {
+            width: 100px;
+            left: 300px;
+        }
+    }
+
+    .navbar__name {
+        justify-self: end;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+.section-home {
+    display: flex;
+    justify-content: space-between;
+
+    .section-home__item {
+        width: 50%;
+
+        .text-title > span {
+            background: #1ab0c5;
+            background: $text-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        p {
+            padding: 2rem 0;
+            max-width: 80%;
+        }
+
+        > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-home__listIcon {
+            display: flex;
+            align-items: center;
+
+            > li:nth-child(1) {
+                margin-left: 0rem;
+            }
+
+            > li {
+                margin-left: 2.5rem;
+                transition: all 0.4s ease;
+            }
+
+            > li:hover,
+            :focus {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.section-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .section-project-title {
+        max-width: $max-width-title-section;
+    }
+
+    .section-project__items {
+        display: flex;
+        justify-content: center;
+        margin: $margin-large 0;
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        .project-item-card {
+            align-self: start; /* Put the item at the start */
+        }
+    }
+}
