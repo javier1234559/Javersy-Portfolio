@@ -1,10 +1,11 @@
-import { Navbar } from './components';
-import { Home, About, Project } from './sections';
+import { Navbar, ScrollBackTop } from './components';
+import { Home, About, Project, Contact, Footer } from './sections';
 import './styles/index.scss';
 
 function App() {
     return (
         <>
+            <ScrollBackTop />
             <div className="blobgradientblur1" />
             <div className="blobgradientblur2" />
             <div className="themes">
@@ -18,7 +19,10 @@ function App() {
                 <div className="wrapper">
                     <Project />
                 </div>
-                {/* <Contact />  */}
+                <div className="wrapper">
+                    <Contact />
+                </div>
+                <Footer />
             </div>
         </>
     );

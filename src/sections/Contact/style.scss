@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .section-contact__items {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10rem 0;
+        align-items: flex-start;
+
+        > div {
+            flex: 1;
+            margin-right: 15rem;
+        }
+        > form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            > input {
+                outline: none;
+                border: 0;
+                border-radius: 5px;
+                padding: 1.2rem;
+
+                &:focus {
+                }
+            }
+
+            > textarea {
+                resize: none;
+                outline: none;
+                border: 0;  
+                border-radius: 5px;
+                padding: 2rem 1.2rem ;
+            }
+
+            .button-contact {
+                align-self: end;
+                background-color: $secondary2;
+                font-weight: $font-weight-bold;
+                color: $primary;
+            }
+        }
+
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

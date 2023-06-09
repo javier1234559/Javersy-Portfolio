@@ -5,7 +5,7 @@ import './style.scss';
 
 function Project() {
     return (
-        <div className="section section-project">
+        <div id="project" className="section section-project">
             <div className="text-center flow section-project-title">
                 <h1 className="text-heading1 text-color-secondary">Projects</h1>
                 <p className="subtitle-section text">

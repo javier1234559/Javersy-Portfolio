@@ -1,14 +1,15 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { RoundIconButton } from '../../components';
-import { heroImg, FiGitLab, FiLinkedin, FiTwitter, FiAtSign } from '../../assets';
+import { gsap } from 'gsap';
+import { heroImg, FiGitHubDark, FiLinkedin, FiTwitter, FiAtSign } from '../../assets';
 import './style.scss';
 
 function Home() {
-    const listIcon = [FiGitLab, FiLinkedin, FiTwitter, FiAtSign];
+    const listIcon = [FiGitHubDark, FiLinkedin, FiTwitter, FiAtSign];
 
     return (
-        <div className="section section-home">
+        <div id="home" className="section section-home">
             <div className="section-home__item">
                 <h1 className="text-title ">
                     I’m <span>JAVIER</span> A WEB DEVERLOPER

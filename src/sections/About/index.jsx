@@ -5,7 +5,7 @@ import { RoundIconButton, RoadmapCard } from '../../components';
 
 function About() {
     return (
-        <div className="section section-about">
+        <div id="about" className="section section-about">
             <div className="text-center flow section-about-title ">
                 <h1 className="text-heading1 text-white">About Me</h1>
                 <p className="subtitle-section text text-white">

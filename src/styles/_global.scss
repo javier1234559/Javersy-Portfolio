@@ -10,6 +10,7 @@
 html {
     /* 62.5% of 16px base font size is 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* Preserve 16px body font-size, set body font-size to 1.6rem */
@@ -97,6 +98,7 @@ li{
 }
 
 .text-heading1 {
+    font-weight: $font-weight-medium;
     font-size: $heading1;
     line-height: $line-height-large;
 }
@@ -109,6 +111,13 @@ li{
 .text-heading3 {
     font-size: $heading3;
     line-height: $line-height-medium;
+    color: $secondary2;
+}
+
+.text-funtional {
+    font-weight: $font-weight-light;
+    font-size: $paragraph;
+    line-height: $line-height-small;
     color: $secondary2;
 }
 

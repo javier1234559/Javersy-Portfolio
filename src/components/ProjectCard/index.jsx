@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+import { FiGitHubLight } from '../../assets';
 import './style.scss';
 
 function ProjectCard() {
@@ -12,8 +13,8 @@ function ProjectCard() {
                 elementum
             </p>
             <div>
-                <i>icon</i>
-                @github
+                <img src={FiGitHubLight} alt="" />
+                <a href="#">http://localhost:5173/Javersy-Portfolio/#</a>
             </div>
             <Button value="View" className="project-card-button" />
         </div>

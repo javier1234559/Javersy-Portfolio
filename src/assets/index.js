@@ -5,7 +5,12 @@ import FiGitLab from './FiGitlab.svg';
 import FiLinkedin from './FiLinkedin.svg';
 import FiTwitter from './FiTwitter.svg';
 import FiAtSign from './FiAtSign.svg';
+import FiLinkedinLight from './FiLinkedinLight.svg';
+import FiTwitterLight from './FiTwitterLight.svg';
+import FiAtSignLight from './FiAtSignLight.svg';
 import FiCheckCircle from './FiCheckCircle.svg';
+import FiGitHubDark from './FiGitHubDark.svg';
+import FiGitHubLight from './FiGitHubLight.svg';
 import heroImg from './heroimg.png';
 import contactImg from './contactimg.png';
 
@@ -18,5 +23,10 @@ export {
     FiAtSign,
     FiCheckCircle,
     heroImg,
-    contactImg
+    contactImg,
+    FiGitHubDark,
+    FiGitHubLight,
+    FiLinkedinLight,
+    FiTwitterLight,
+    FiAtSignLight
 };
