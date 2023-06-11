@@ -1,5 +1,5 @@
 //----------------------------- THEME ----------------------------
-//theme dark
+// Định nghĩa các biến màu cho theme dark
 $primary: #051320;
 $secondary1: #fff;
 $secondary2: #eceeee;
@@ -8,15 +8,49 @@ $accent: #76dcc2;
 $gradient1: #76dcc2;
 $gradient2: #c0e6de;
 $hover: rgba(195, 235, 238, 0.2);
-//theme light
-$primary: #eceeee;
-$secondary1: #ffffff;
-$secondary2: #051320;
-$secondary3: #000812;
-$accent: #76dcc2;
-$gradient1: #76dcc2;
-$gradient2: #c0e6de;
-$hover: rgba(167, 186, 190, 0.342);
+
+// Định nghĩa các biến màu cho theme light
+$primary-light: #eceeee;
+$secondary1-light: #ffffff;
+$secondary2-light: #051320;
+$secondary3-light: #000812;
+$accent-light: #76dcc2;
+$gradient1-light: #76dcc2;
+$gradient2-light: #c0e6de;
+$hover-light: rgba(167, 186, 190, 0.342);
+
+:root {
+    --primary-color: #eceeee;
+    --secondary1-color: #ffffff;
+    --secondary2-color: #051320;
+    --secondary3-color: #000812;
+    --accent-color: #76dcc2;
+    --gradient1-color: #76dcc2;
+    --gradient2-color: #c0e6de;
+    --hover-color: rgba(167, 186, 190, 0.342);
+}
+
+.theme-dark {
+    --primary-color: #051320;
+    --secondary1-color: #fff;
+    --secondary2-color: #eceeee;
+    --secondary3-color: #000812;
+    --accent-color: #76dcc2;
+    --gradient1-color: #76dcc2;
+    --gradient2-color: #c0e6de;
+    --hover-color: rgba(195, 235, 238, 0.2);
+}
+
+/*
+  var(--primary-color);
+  var(--secondary1-color);
+  var(--secondary2-color);
+  var(--secondary3-color);
+  var(--accent-color);
+  var(--gradient1-color);
+  var(--gradient2-color);
+  var(--hover-color);
+*/
 
 // background:
 $text-gradient: radial-gradient(circle, rgba(26, 176, 197, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -26,11 +60,11 @@ $wapperlength: 90%;
 
 $max-width-title-section: 80rem;
 
-$font-family: 'Open Sans', sans-serif;
+$font-family: 'Urbanist', sans-serif;
 $heading1: 4.8rem;
-$heading2: 2.4rem;
-$heading3: 1.6rem;
-$paragraph: 1.4rem;
+$heading2: 3rem;
+$heading3: 2rem;
+$paragraph: 1.6rem;
 $title-text: 6.4rem;
 $functional-text: 1.2rem;
 

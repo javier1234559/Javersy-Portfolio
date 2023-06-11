@@ -9,6 +9,7 @@ import FiLinkedinLight from './FiLinkedinLight.svg';
 import FiTwitterLight from './FiTwitterLight.svg';
 import FiAtSignLight from './FiAtSignLight.svg';
 import FiCheckCircle from './FiCheckCircle.svg';
+import FiLoadSignCircle from './FiLoadSign.svg';
 import FiGitHubDark from './FiGitHubDark.svg';
 import FiGitHubLight from './FiGitHubLight.svg';
 import heroImg from './heroimg.png';
@@ -22,6 +23,7 @@ export {
     FiTwitter,
     FiAtSign,
     FiCheckCircle,
+    FiLoadSignCircle,
     heroImg,
     contactImg,
     FiGitHubDark,

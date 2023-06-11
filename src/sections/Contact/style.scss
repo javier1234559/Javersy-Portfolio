@@ -1,4 +1,6 @@
 @import '../../styles/variables';
+@import '../../styles/reponsive';
+
 .section-contact {
     display: flex;
     flex-direction: column;
@@ -35,23 +37,41 @@
             > textarea {
                 resize: none;
                 outline: none;
-                border: 0;  
+                border: 0;
                 border-radius: 5px;
-                padding: 2rem 1.2rem ;
+                padding: 2rem 1.2rem;
             }
 
             .button-contact {
                 align-self: end;
-                background-color: $secondary2;
+                background-color: var(--secondary2-color);
                 font-weight: $font-weight-bold;
-                color: $primary;
+                color: var(--primary-color);
             }
         }
 
         > img {
             height: 100%;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
+        }
+    }
+}
+@include mobileAndTablet {
+    .section-contact {
+        .section-contact__items {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            > div {
+                margin: 0 3rem;
+            }
+
+            > form {
+                flex: 1;
+                width: 100%;
+            }
         }
     }
 }

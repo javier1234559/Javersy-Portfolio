@@ -3,9 +3,9 @@ import './style.scss';
 
 function Button(props) {
     return (
-        <div className={`button ${props?.className}`}>
+        <button type={props?.type} className={`button ${props?.className}`}>
             <p>{props?.value}</p>
-        </div>
+        </button>
     );
 }
 

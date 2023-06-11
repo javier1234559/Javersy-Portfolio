@@ -1,9 +1,18 @@
-// @import '../../styles/variables';
+@import '../../styles/variables';
 
 .button {
     cursor: pointer;
     padding: 1.2rem 2.5rem;
     border-radius: 0.5rem;
-    background-color: #051320;
-    color: #ECEEEE;
+    border: 1px solid #051320;
+    background-color: var(--secondary2-color);
+    color: var(--primary-color);
+    transition: background 0.4s ease;
+
+    &:hover {
+        background-color: transparent !important;
+        color: var(--secondary2-color) !important;
+        border: 1px solid var(--secondary2-color);
+    }
+   
 }

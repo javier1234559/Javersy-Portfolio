@@ -1,3 +1,5 @@
+@import '../../styles/reponsive';
+
 .round-icon-button {
     display: flex;
     align-items: center;
@@ -10,7 +12,14 @@
 
     > img {
         object-fit: contain;
-        width: 20px ;
-        height: 20px ;
+        width: 20px;
+        height: 20px;
+    }
+
+    @include mobile {
+        & {
+            width: 30px;
+            height: 30px;
+        }
     }
 }

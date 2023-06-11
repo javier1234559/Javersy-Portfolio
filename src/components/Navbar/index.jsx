@@ -1,15 +1,23 @@
-import React from 'react';
-import Button from '../Button';
-import { lightIcon } from '../../assets/index';
+import React, { useContext } from 'react';
+import { Button, ToggleThemeButton, ToggleNavButton } from '../../components';
+import { lightIcon, darkIcon } from '../../assets/index';
+import { ThemeContext } from '../../context/ThemeContext';
 import './style.scss';
 
 function Navbar() {
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+
     return (
         <nav className="navbar">
-            <div className="navbar__logo">
-                <img src={lightIcon} alt="Logo" />
+            <ToggleNavButton className="navbar__mobile" />
+            <div className="navbar__logo animation-navbar-showin">
+                {isDarkTheme ? (
+                    <img src={lightIcon} alt="Logo" />
+                ) : (
+                    <img src={darkIcon} alt="Logo" />
+                )}
             </div>
-            <ul className="navbar__menu">
+            <ul className="navbar__menu animation-navbar-showin">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -24,7 +32,10 @@ function Navbar() {
                 </li>
                 <li className="animation start-home" />
             </ul>
-            <Button value="Resume" />
+            <div className="animation-navbar-showin navbar__button__group">
+                <ToggleThemeButton className="navbar__name" />
+                <Button value="Resume" />
+            </div>
         </nav>
     );
 }

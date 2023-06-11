@@ -11,27 +11,28 @@ html {
     /* 62.5% of 16px base font size is 10px */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Preserve 16px body font-size, set body font-size to 1.6rem */
 body {
     /* 16px */
-    font-size: 1.6rem;
+    font-size: $paragraph;
     font-family: $font-family;
     position: relative;
-    background-color: $primary;
     width: 100%;
-
     min-height: 100vh;
     bottom: 0;
     top: 0;
+    background-color: var(--primary-color);
+    
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
-li{
+li {
     list-style: none;
 }
 
@@ -57,7 +58,7 @@ li{
     width: 541.36px;
     height: 372.15px;
     right: 0px;
-    background: $gradient1;
+    background: var(--gradient1-color);
     filter: blur(175px);
 }
 .blobgradientblur2 {
@@ -68,7 +69,7 @@ li{
     height: 204.23px;
     right: 136.4px;
 
-    background: $gradient2;
+    background: var(--gradient2-color);
     filter: blur(175px);
 }
 
@@ -77,8 +78,8 @@ li{
 }
 
 .text {
-    color: $secondary2;
-    line-height : $line-height-small;
+    color: var(--secondary2-color);
+    line-height: $line-height-small;
 }
 .text-center {
     text-align: center;
@@ -94,7 +95,7 @@ li{
     font-weight: $font-weight-bold;
     font-size: $title-text;
     line-height: $line-height-title;
-    color: $secondary2;
+    color: var(--secondary2-color);
 }
 
 .text-heading1 {
@@ -106,19 +107,19 @@ li{
 .text-heading2 {
     font-size: $heading2;
     line-height: $line-height-medium;
-    color: $secondary2;
+    color: var(--secondary2-color);
 }
 .text-heading3 {
     font-size: $heading3;
     line-height: $line-height-medium;
-    color: $secondary2;
+    color: var(--secondary2-color);
 }
 
 .text-funtional {
     font-weight: $font-weight-light;
     font-size: $paragraph;
     line-height: $line-height-small;
-    color: $secondary2;
+    color: var(--secondary2-color);
 }
 
 .title-section {
@@ -139,19 +140,19 @@ li{
     padding: $padding-small;
 }
 .section {
-    margin: $margin-medium 0 ;
+    margin: $margin-medium 0;
 }
 
-.position-absolute{
+.position-absolute {
     position: absolute;
 }
 
-.text-color-primary{
-    color:$primary;
+.text-color-primary {
+    color: var(--primary-color);
 }
-.text-color-secondary{
-    color:$secondary2;
+.text-color-secondary {
+    color: var(--secondary2-color);
 }
-.text-white{
-    color:#ECEEEE;
+.text-white {
+    color: #eceeee;
 }

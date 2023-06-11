@@ -1,10 +1,14 @@
 @import '../../styles/variables';
+@import '../../styles/reponsive';
+
 .section-home {
+    min-height: 100vh - 35vh;
     display: flex;
     justify-content: space-between;
 
     .section-home__item {
         width: 50%;
+        overflow: hidden;
 
         .text-title > span {
             background: #1ab0c5;
@@ -12,7 +16,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-fill-color: transparent;
         }
 
         p {
@@ -24,6 +27,12 @@
             object-fit: cover;
             width: 100%;
             height: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: all 1s ease;
+
+            &:hover {
+                scale: 1.3;
+            }
         }
 
         .section-home__listIcon {
@@ -46,3 +55,37 @@
         }
     }
 }
+
+.icon-animate-showin {
+    opacity: 0;
+}
+
+.content-animate-showin {
+    opacity: 0;
+}
+
+@include mobile  {
+    .section-home__item {
+        width: 100% !important;
+        .text-title{
+            width: 100%;
+            font-size:4rem;
+            line-height:7rem;
+        }
+
+    }
+}
+
+@include mobileAndTablet  {
+    .section-home {
+        flex-direction: column;
+    }
+
+    .section-home__item {
+        width: 100% !important;
+        .section-home__listIcon {
+            margin-bottom: 4rem;
+        }
+    }
+}
+

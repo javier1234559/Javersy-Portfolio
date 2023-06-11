@@ -1,9 +1,13 @@
 import React from 'react';
 import './style.scss';
 
-function RoadmapCard() {
+function RoadmapCard(props) {
     return (
-        <div className="card roadmap-card">
+        <div
+            className={`card roadmap-card ${props?.className}`}
+            data-right={props?.left === true ? 'right' : 'left'}
+            data-offset={props?.offset}
+        >
             <div className="roadmap-card-date">
                 <p>8/9/2002</p>
             </div>

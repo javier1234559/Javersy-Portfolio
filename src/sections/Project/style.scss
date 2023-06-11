@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/reponsive';
 
 .section-project {
     display: flex;
@@ -12,19 +13,59 @@
 
     .section-project__items {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: $margin-large 0;
         > div {
-            margin: 0 2rem ;
+            margin: 0 2rem;
+        }
+        .section-project__items__image {
+            overflow: hidden;
+            width: 50rem;
+            height: 50rem;
+            .image-paralax {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                // background-attachment: fixed;
+                background-position: center;
+                transition: all 1s ease;
+            }
+            &:hover {
+                .image-paralax {
+                    transform: scale(1.3);
+                }
+            }
         }
 
-        > img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
         .project-item-card {
             align-self: start; /* Put the item at the start */
+        }
+    }
+}
+
+@include mobileAndTablet {
+    .section-project {
+        flex-direction: column;
+        margin: 3rem;
+
+        .section-project-title {
+            max-width: $max-width-title-section - 2rem;
+            padding: 0 3rem;
+        }
+
+        .section-project__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50rem;
+            > div {
+                margin: 0;
+            }
+            .section-project__items__image {
+                width: 90%;
+            }
         }
     }
 }

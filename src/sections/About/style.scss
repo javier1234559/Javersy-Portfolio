@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/reponsive';
 
 .section-about {
     display: flex;
@@ -10,6 +11,7 @@
 
     .section-about-title {
         max-width: $max-width-title-section;
+        padding: 0 3rem;
     }
     .roadmap {
         margin: 80px 0;
@@ -45,6 +47,57 @@
 
         .position-absolute:nth-child(4) {
             top: 100%;
+        }
+    }
+}
+
+@include mobileAndTablet {
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .section-about-title {
+            max-width: $max-width-title-section - 10rem;
+        }
+        .roadmap {
+            margin-left: 3rem;
+            .roadmap-destop {
+                display: none;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .section-about-title {
+            max-width: $max-width-title-section - 10rem;
+        }
+        .roadmap {
+            margin-left: -13rem;
+            background: transparent;
+
+            .position-absolute {
+                display: none;
+            }
+
+            .roadmap-tablet {
+                width: 100vw;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .section-about {
+        .roadmap {
+            .roadmap-tablet {
+                display: none;
+            }
         }
     }
 }

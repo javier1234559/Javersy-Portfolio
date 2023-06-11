@@ -1,7 +1,9 @@
 @import '../../styles/variables';
+@import '../../styles/reponsive';
+
 .project-card {
     margin: 0 2rem;
-    color: $secondary2;
+    color: var(--secondary2-color);
     max-width: 50%;
     display: flex;
     flex-direction: column;
@@ -21,8 +23,20 @@
 
     > .project-card-button {
         align-self: start;
-        background-color: $secondary2;
+        background-color: var(--secondary2-color);
         font-weight: $font-weight-bold;
-        color: $primary;
+        color: var(--primary-color);
+    }
+}
+
+@include mobileAndTablet {
+    .project-card {
+        margin: 5rem 2rem !important;
+        max-width: 100%;
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }
