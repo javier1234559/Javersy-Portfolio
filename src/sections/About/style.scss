@@ -57,11 +57,12 @@
         flex-direction: column;
         align-items: flex-start;
         .section-about-title {
+            align-self: center;
             max-width: $max-width-title-section - 10rem;
         }
         .roadmap {
             margin-left: 3rem;
-            .roadmap-destop {
+            .roadmap-desktop {
                 display: none;
             }
         }
@@ -74,6 +75,7 @@
         flex-direction: column;
         align-items: flex-start;
         .section-about-title {
+           
             max-width: $max-width-title-section - 10rem;
         }
         .roadmap {

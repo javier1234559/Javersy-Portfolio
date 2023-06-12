@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useRef, useContext } from 'react';
 import { ToastContext } from '../../context';
-import { RoundIconButton ,ToastNotifiation } from '../../components';
+import { RoundIconButton, ToastNotifiation } from '../../components';
 import { gsap } from 'gsap';
 import { heroImg, FiGitHubDark, FiLinkedin, FiTwitter, FiAtSign } from '../../assets';
 import './style.scss';
@@ -39,8 +39,8 @@ function Home() {
                     I’m <span>JAVIER</span> A WEB DEVERLOPER
                 </h1>
                 <p className="text content-animate-showin">
-                    Lorem ipsum dolor sit amet consectetur. Massa eu aliquet tellus integer nec
-                    dictum urna. Odio ut duis luctus in platea faucibus eget aliquam.
+                    I'm Nhat,a developer from Vietnam. I'm passionate about web development and
+                    software, and I enjoy using technology to solve problems and create new things.
                 </p>
                 <ul className="section-home__listIcon">
                     {listIcon.map((icon, index) => (

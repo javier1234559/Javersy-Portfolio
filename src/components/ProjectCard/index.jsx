@@ -9,21 +9,17 @@ function ProjectCard(props) {
 
     return (
         <div className={`project-card flow ${props?.className}`}>
-            <h1 className="text-heading2">Create amazing SVG animations</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas nisl volutpat ultrices amet
-                tristique non nibh sollicitudin eu. Et vulputate consequat nulla sed eget tortor
-                elementum
-            </p>
+            <h1 className="text-heading2">{props?.title}</h1>
+            <p>{props?.description}</p>
             <div>
                 {isDarkTheme ? (
                     <img src={FiGitHubLight} alt="" />
                 ) : (
                     <img src={FiGitHubDark} alt="" />
                 )}
-                <a href="#">http://localhost:5173/Javersy-Portfolio/#</a>
+                <a href={props?.linkgit}>{props?.linkgit}</a>
             </div>
-            <Button value="View" className="project-card-button" />
+            <Button value="View" className="project-card-button" href={props?.linkview} />
         </div>
     );
 }

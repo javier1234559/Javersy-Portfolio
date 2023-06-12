@@ -34,7 +34,7 @@ function Navbar() {
             </ul>
             <div className="animation-navbar-showin navbar__button__group">
                 <ToggleThemeButton className="navbar__name" />
-                <Button value="Resume" />
+                <Button value="Resume" href="/Javersy-Portfolio/src/resources/pdf/CV_Software_Engineer.pdf" />
             </div>
         </nav>
     );
