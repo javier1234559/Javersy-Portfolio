@@ -1,6 +1,10 @@
 @import './variables';
 @import './reponsive';
 
+:root {
+    --n: 7;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +29,6 @@ body {
     bottom: 0;
     top: 0;
     background-color: var(--primary-color);
-    
 }
 
 a {

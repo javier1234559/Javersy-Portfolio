@@ -50,7 +50,7 @@ function App() {
             sections.forEach((section) => {
                 gsap.fromTo(
                     section,
-                    { opacity: 0, y: '40px' },
+                    { opacity: 0, y: '100px' },
                     {
                         opacity: 1,
                         y: 0,

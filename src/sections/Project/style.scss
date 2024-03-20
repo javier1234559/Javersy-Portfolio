@@ -9,19 +9,19 @@
 
     .section-project-title {
         max-width: $max-width-title-section;
+        margin-bottom: $margin-medium;
     }
 
     .section-project__items {
         display: flex;
         justify-content: space-between;
-        margin: $margin-large 0;
         > div {
             margin: 0 2rem;
         }
         .section-project__items__image {
             overflow: hidden;
             width: 50rem;
-            height: 50rem;
+            // height: 50rem;
             .image-paralax {
                 width: 100%;
                 height: 100%;

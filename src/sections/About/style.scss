@@ -16,7 +16,7 @@
     .roadmap {
         margin: 80px 0;
         position: relative;
-        height: 1000px;
+        height: 2000px;
         width: 1.5rem;
         border-radius: 20px;
         background-color: #fff;
@@ -33,21 +33,13 @@
             transform: translate(-50%, -50%);
         }
 
-        .position-absolute:nth-child(1) {
-            top: 0;
+        $n: 8;
+        @for $i from 1 through $n {
+            .position-absolute:nth-child(#{$i}) {
+                top: percentage(calc(($i - 1) / $n));
+            }
         }
 
-        .position-absolute:nth-child(2) {
-            top: 33.33%;
-        }
-
-        .position-absolute:nth-child(3) {
-            top: 66.66%;
-        }
-
-        .position-absolute:nth-child(4) {
-            top: 100%;
-        }
     }
 }
 
@@ -75,7 +67,6 @@
         flex-direction: column;
         align-items: flex-start;
         .section-about-title {
-           
             max-width: $max-width-title-section - 10rem;
         }
         .roadmap {

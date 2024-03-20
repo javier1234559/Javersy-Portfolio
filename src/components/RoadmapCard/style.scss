@@ -1,76 +1,64 @@
 @mixin childRoadMapMixin {
     .roadmap-card-date {
-      align-self: flex-start;
-      border-radius: 5px;
-      min-width: 8rem;
-      padding: 0.5rem 1rem;
-      background-color: #6fd8c6;
-      color: #fff;
-      font-size: 14px;
-      font-weight: 400;
-  
-      > p {
-        text-align: center;
-      }
-    }
-  
-    .roadmap-card-content {
-      margin: 1rem 0;
-    }
-  
-    .roadmap-card-tags {
-      display: flex;
-      flex-wrap: wrap;
-  
-      > div {
-        color: #fff;
         align-self: flex-start;
         border-radius: 5px;
-        min-width: 2rem;
-        padding: 0.2rem 1rem;
+        min-width: 8rem;
+        padding: 0.5rem 1rem;
         background-color: #6fd8c6;
-        margin-right: 0.5rem;
-        margin-top: 1rem;
-      }
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+
+        > p {
+            text-align: center;
+        }
     }
-  }
-  
-  @mixin roadmapCardMixin($top) {
+
+    .roadmap-card-content {
+        margin: 1rem 0;
+    }
+
+    .roadmap-card-tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        > div {
+            color: #fff;
+            align-self: flex-start;
+            border-radius: 5px;
+            min-width: 2rem;
+            padding: 0.2rem 1rem;
+            background-color: #6fd8c6;
+            margin-right: 0.5rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@mixin roadmapCardMixin($top) {
     position: absolute;
     min-width: 350px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+
     @include childRoadMapMixin;
-  
+
     &[data-right='left'] {
-      right: 850%;
-      top: $top;
+        right: 850%;
+        top: $top;
     }
-  
+
     &[data-right='right'] {
-      left: 850%;
-      top: $top;
+        left: 850%;
+        top: $top;
     }
-  }
-  
-  .roadmap-card {
-    &[data-offset='1'] {
-      @include roadmapCardMixin(0);
+}
+
+$n: 7;
+@for $i from 1 through $n {
+    .roadmap-card[data-offset='#{$i}'] {
+        @include roadmapCardMixin(($i - 1) * calc(100% / $n));
     }
-  
-    &[data-offset='2'] {
-      @include roadmapCardMixin(25%);
-    }
-  
-    &[data-offset='3'] {
-      @include roadmapCardMixin(50%);
-    }
-  
-    &[data-offset='4'] {
-      @include roadmapCardMixin(75%);
-    }
-  }
-  
+}

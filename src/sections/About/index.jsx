@@ -10,26 +10,23 @@ function About() {
             <div className="text-center flow section-about-title animate-showin ">
                 <h1 className="text-heading1 text-white">About Me</h1>
                 <p className="subtitle-section text text-white">
-                    I'm a third-year student at the University of Technology and Education in Ho Chi
-                    Minh City, specializing in computer science and software engineering. My
+                    I'm a fourth-year student at the University of Technology and Education in Ho
+                    Chi Minh City, specializing in computer science and software engineering. My
                     favorite languages are Java and JavaScript, and I'm always eager to expand my
                     knowledge in these areas.
                 </p>
             </div>
             <div>
                 <div className="roadmap">
-                    <RoundIconButton value={FiCheckCircle} className="position-absolute" />
-                    <RoundIconButton value={FiCheckCircle} className="position-absolute" />
-                    <RoundIconButton value={FiCheckCircle} className="position-absolute" />
+                    {Array.from({ length: 7 }, (_, i) => (
+                        <RoundIconButton
+                            key={i}
+                            value={FiCheckCircle}
+                            className="position-absolute"
+                        />
+                    ))}
                     <RoundIconButton value={FiLoadSignCircle} className="position-absolute" />
-                    {/* <RoadmapCard left offset="1" className="animate-showin roadmap-destop" />
-                    <RoadmapCard right offset="2" className="animate-showin roadmap-destop" />
-                    <RoadmapCard left offset="3" className="animate-showin roadmap-destop" />
-                    <RoadmapCard right offset="4" className="animate-showin roadmap-destop" />
-                    <RoadmapCard left offset="1" className="animate-showin roadmap-tablet" />
-                    <RoadmapCard left offset="2" className="animate-showin roadmap-tablet" />
-                    <RoadmapCard left offset="3" className="animate-showin roadmap-tablet" />
-                    <RoadmapCard left offset="4" className="animate-showin roadmap-tablet" /> */}
+                  
                     {roadmaps.map((roadmap) => (
                         <>
                             <RoadmapCard
